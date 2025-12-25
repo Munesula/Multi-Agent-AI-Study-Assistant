@@ -1,0 +1,33 @@
+# Top-level, directly required packages for the project
+phidata>=2.7.10
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-dotenv>=1.0.1
+
+groq==0.32.0
+openai==2.7.1
+
+# LangChain: pick the main version used by the project
+langchain==0.3.10
+langchain-community==0.3.10
+langchain-groq>=0.1.6
+langchain-text-splitters>=0.3.0,<0.3.75
+# Use the langchain-chroma bridge compatible with langchain 0.3.x
+langchain-chroma>=0.2.0,<0.3.0
+
+# Vector DB / tooling
+chromadb==0.6.3
+tiktoken>=0.7.0
+
+# Other utilities
+ddgs==9.7.0
+duckduckgo-search==6.3.5
+pydantic>=2.9.2,<3.0.0
+requests>=2.32.3
+httpx>=0.27.2
+beautifulsoup4>=4.12.3
+lxml>=5.3.0
+numpy>=1.26.4
+
+# Optional dashboard
+streamlit>=1.38.0
